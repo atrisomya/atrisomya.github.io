@@ -126,6 +126,10 @@ nav ul li a:hover::after {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.stat {
+    display: flex;
+    justify-content:center
+}
 @media(max-width:768px) {
     .hamburger{
         display: block;
