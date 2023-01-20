@@ -237,7 +237,7 @@ section .title::after {
 .services .title::after,
 .project .title::after {
   background: #111;
-  content: "what I have done";
+  content: "my stats";
 }
 
 #gitstat1 {
@@ -311,7 +311,7 @@ section .title::after {
   }
   /* project section style */
 .project .title::after {
-    content: "checkout my work";
+    content: "my work";
   }
   .carousel {
     display: flex;
