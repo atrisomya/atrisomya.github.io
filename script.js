@@ -1,12 +1,12 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-      // sticky navbar on scroll script
+      // sticky navbar on scroll 
       if (this.scrollY > 20) {
         $(".navbar").addClass("sticky");
       } else {
         $(".navbar").removeClass("sticky");
       }
-         //scroll-up button show/hide script
+         //scroll-up button show/hide 
     if (this.scrollY > 500) {
         $(".scroll-up-btn").addClass("show");
       } else {
@@ -15,11 +15,14 @@ $(document).ready(function () {
     });
 
     $(".navbar .menu li a").click(function () {
-      // applying again smooth scroll on menu items click
       $("html").css("scrollBehavior", "smooth");
     });
   });
 
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
 
 // lightslider script
 
@@ -29,14 +32,40 @@ $(document).ready(function() {
     slideMove: 1,
     mode: "slide",
     cssEasing: 'ease',
-    speed: 500, //ms'
+    speed: 500, 
     auto: true,
     loop: true,
-    pauseOnHover: true
+    pauseOnHover: true,
+    responsive : [
+      {
+          breakpoint:800,
+          settings: {
+              item:2,
+              slideMove:1,
+              slideMargin:10,
+              speed: 500, //ms'
+              auto: true,
+              loop: true,
+              pauseOnHover: true
+            }
+      },
+      {
+          breakpoint:480,
+          settings: {
+              item:1,
+              slideMove:1,
+              slideMargin:10,
+              speed: 500, //ms'
+              auto: true,
+              loop: true,
+              pauseOnHover: true
+            }
+      }
+  ]
   }); 
 });
 
-// typing text animation script
+// typing text animation 
 var typed = new Typed(".typing", {
     strings: ["Back-End Developer"],
     typeSpeed: 100,
