@@ -159,7 +159,7 @@ section .title::after {
   .home .home-content a {
     display: inline-block;
     background: rgb(90, 90, 204);
-    color: black;
+    color: white;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -182,7 +182,7 @@ section .title::after {
   
   /* about section style */
   .about .title::after {
-    content: "who i am";
+    content: "who I am";
   }
   .about .about-content .left {
     width: 45%;
@@ -256,7 +256,7 @@ section .title::after {
     transition: all 0.3s ease;
   }
   .skills .title::after {
-    content: "what i know";
+    content: "what I know";
   }
   
   /* skills right column */
@@ -363,6 +363,7 @@ section .title::after {
     border: 1px solid white;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
   }
   
   .demo-div {
@@ -371,6 +372,7 @@ section .title::after {
     border: 1px solid white;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
   }
   
   .demo-div a,
