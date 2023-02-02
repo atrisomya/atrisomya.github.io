@@ -188,10 +188,10 @@ section .title::after {
     width: 45%;
   }
   .about .about-content .left img {
-    height: 400px;
-    width: 400px;
+    /* height: 400px; */
+    width: 350px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
   }
   .about .about-content .right {
     width: 55%;
