@@ -79,3 +79,8 @@ var typed = new Typed(".typing", {
     backSpeed: 60,
     loop: true,
   });
+
+
+  document.getElementById('resume').addEventListener('click', (e) => {
+    window.open("https://drive.google.com/file/d/1zNs5p_fSuewthjtj2X001pauDclCCbkI/view?usp=sharing", "_blank");
+  })
