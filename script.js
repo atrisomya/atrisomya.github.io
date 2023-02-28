@@ -84,3 +84,6 @@ var typed = new Typed(".typing", {
   document.getElementById('resume').addEventListener('click', (e) => {
     window.open("https://drive.google.com/file/d/1zNs5p_fSuewthjtj2X001pauDclCCbkI/view?usp=sharing", "_blank");
   })
+  document.getElementById('resume2').addEventListener('click', (e) => {
+    window.open("https://drive.google.com/file/d/1zNs5p_fSuewthjtj2X001pauDclCCbkI/view?usp=sharing", "_blank");
+  })
