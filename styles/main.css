@@ -384,7 +384,7 @@ section .title::after {
 
 /* project section styling */
 .project .title::after {
-  content: "see my work";
+  background: white;
 }
 .project .carousel .card {
   background: #222;
@@ -393,10 +393,9 @@ section .title::after {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
+  height: 600px;
 }
-.project .carousel .card:hover {
-  background: var(--theme-color);
-}
+
 .project .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -419,7 +418,6 @@ section .title::after {
   width: 100%;
   height: 45px;
   margin-top: 5%;
-  /* border: 2px solid wheat; */
 }
 
 .repo-div {
@@ -483,6 +481,9 @@ section .title::after {
   color: white;
 }
 
+.project .card-text {
+  max-height: 300px;
+}
 /* =========CONTACT ME=============== */
 .contact .contact-content .column {
   width: calc(50% - 30px);
