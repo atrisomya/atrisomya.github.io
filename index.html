@@ -6,21 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <title>Somya Upadhyay | Portfolio</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Source+Sans+Pro:wght@300&display=swap');
-   </style>  
+    <link rel="icon" type="image/x-icon" href="images/Somya Upadhyay.jpeg">
    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
    <script src="https://kit.fontawesome.com/241a1cab24.js" crossorigin="anonymous"></script> 
 
 </head>
 <body>
+  <div class="space-bg" id="space"></div>
    <nav class="navbar">
       <div class="max-width">
           <div class="logo"><a href="#">Somya <span>U.</span></a></div>
@@ -29,7 +25,6 @@
               <li><a href="#about" class="menu-btn">About</a></li>
               <li><a href="#skills" class="menu-btn">Skills</a></li>
               <li><a href="#project" class="menu-btn">Projects</a></li>
-              <li><a href="#stats" class="menu-btn">Stats</a></li>
               <li><a href="#contact" class="menu-btn">Contact</a></li>
               <li><a id="resume" href="./pdf/Somya-Upadhyay-Resume.pdf" target="_blank" download="Somya-Upadhyay-Resume.pdf" class="menu-btn">Resumé</a></li>
           </ul>
@@ -42,13 +37,11 @@
   <section class="home" id="home">
    <div class="max-width" id="homegif">
        <div class="home-content">
-            <!-- <img src="images/somya (2).JPG" id="homeimg"> -->
            <div class="text-1">Hello, there! I'm</div>
            <div class="text-2">Somya Upadhyay</div>
            <div class="text-3"><span class="typing"></span></div>
            <a id="resume2" href="./pdf/Somya-Upadhyay-Resume.pdf" target="_blank" download="Somya-Upadhyay-Resume.pdf">Resumé</a>
        </div>
-       <!-- <img src="images/gifffff.gif" alt=""> -->
    </div>
 </section>
 
@@ -58,7 +51,7 @@
        <h2 class="title">About me</h2>
        <div class="about-content">
            <div class="column left">
-               <img src="images/somya (2).JPG" alt="">
+               <img src="images/Somya Upadhyay.jpeg" alt="">
            </div>
            <div class="column right">
                <div class="text">I'm Somya and I'm a <span class="typing-2"></span></div>
@@ -256,205 +249,122 @@
       </div>
     </div>
   </section>
-   <!-- skills section-->
-<!-- project section-->
+
 <!--==================== Projects ====================-->
+
   <section class="project" id="project">
-    <div class="max-width">
-      <h2 class="title">Projects</h2>
-      <!-- div -->
-      <div class="work__container bd-grid">
-         <!-- <div > -->
-        <div class="work__box">
-          <div class="right_box_work">
-                  <img class="work__img" src="https://camo.githubusercontent.com/d47035f85c2f7af21fa8ad8d87c8c44fc75b9368ef0c3ff3798c8c8dec062bad/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d7a6c49316a53735f4f4c366b5372527346686779396b6b61794a595646725948706b77347250644670756d4a4e5051536b673465614c36327079777866655467364d3d7732343030" alt="">
-
-          </div>
-          <div class="left_box_work">
-              <div class="work_project_name">
-                  <h2 class="project-heading">Online Banking Application</h2>
-              </div>
-              <p class="project-para">An online banking application to maintain the accounts, withdraw, deposit money and track their transactions. Bank provides account number to the customer for all the transactions in the bank. </p>
-              <a style="display:inline-block;margin-right: 20px;"
-                  href="https://github.com/atrisomya/Online-Banking-Application" target="_blank">Code<i
-                      class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-              <a style="display:inline-block;margin-right: 20px;"
-                  href="https://drive.google.com/file/d/1tK7cmim5vUhjXvt8m_la7Vwi5Wkra6VC/view?usp=sharing" target="_blank">Video<i
-                      class="fa-solid fa-square-arrow-up-right"
-                      style="display: block-inline;margin-left:5px"></i></a>
-              <div>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">Java
-                  </p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">JDBC</p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">MySQL</p>
-              </div>
-          </div>
-
-      </div>
-    <!-- div -->
-    <!-- <div > -->
-        <div class="work__box">
-          <div class="right_box_work">
-                  <img class="work__img" src="images/amusement park app.png" alt="">
-
-          </div>
-          <div class="left_box_work">
-              <div class="work_project_name">
-                  <h2 class="project-heading">Amusement Park Application</h2>
-              </div>
-              <p class="project-para">REST API for an Online Amusement Park Application where a customer can book tickets, signup, login, view billing details and an admin can perform the CRUD Operations on activities, tickets and Customers.</p>
-              <a style="display:inline-block;margin-right: 20px;"
-                  href="https://github.com/atrisomya/Amusement-Park-application" target="_blank">Code<i
-                      class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-              <a style="display:inline-block;margin-right: 20px;"
-                  href="https://drive.google.com/file/d/15ETuXwxbUS_oltXvYvAJBYR9J6dmkhHT/view" target="_blank">Video<i
-                      class="fa-solid fa-square-arrow-up-right"
-                      style="display: block-inline;margin-left:5px"></i></a>
-              <div>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">Java
-                  </p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">SpringBoot</p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">MySQL</p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">Hibernate</p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">Postman</p>
-              </div>
-          </div>
-
-      </div>
-    <!-- div -->
-        <!-- <div> -->
-        <div class="work__box">
-            <div class="right_box_work">
-                    <img class="work__img" src="images/HubSpot.png" alt="">
-
-            </div>
-            <div class="left_box_work">
-                <div class="work_project_name">
-                    <h2 class="project-heading">HubSpot - Clone</h2>
-                </div>
-                <p class="project-para"> This is a clone of the website HubSpot which is a software platform designed to help your company market and sell more effectively. </p>
-                <a style="display:inline-block;margin-right: 20px;"
-                    href="https://github.com/atrisomya/HubSpot-Clone" target="_blank">Code<i
-                        class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-                <a style="display:inline-block;margin-right: 20px;"
-                    href="https://willowy-biscuit-b9483d.netlify.app/" target="_blank">Live<i
-                        class="fa-solid fa-square-arrow-up-right"
-                        style="display: block-inline;margin-left:5px"></i></a>
-                <div>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">JavaScript
-                    </p>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">HTML</p>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">CSS</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- </div> -->
-
-        <!-- <div > -->
-          <div class="work__box">
-            <div class="right_box_work">
-                    <img class="work__img" src="images/licious.png" alt="">
-
-            </div>
-            <div class="left_box_work">
-                <div class="work_project_name">
-                    <h2 class="project-heading">Licious - Clone</h2>
-                </div>
-                <p class="project-para">Licious is a website that provides web-based meat and fish delivery service. It also provides an admin panel along with the usual functionalities for users.</p>
-                <a style="display:inline-block;margin-right: 20px;"
-                    href="https://github.com/atrisomya/Licious-Clone" target="_blank">Code<i
-                        class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-                <a style="display:inline-block;margin-right: 20px;"
-                    href="https://liicious.netlify.app/" target="_blank">Live<i
-                        class="fa-solid fa-square-arrow-up-right"
-                        style="display: block-inline;margin-left:5px"></i></a>
-                <div>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">JavaScript
-                    </p>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">HTML</p>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">CSS</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- </div> -->
-
-        <!-- <div > -->
-          <div class="work__box">
-            <div class="right_box_work">
-                    <img class="work__img" src="images/YouTube.png" alt="">
-
-            </div>
-            <div class="left_box_work">
-                <div class="work_project_name">
-                    <h2 class="project-heading">YouTube - Clone</h2>
-                </div>
-                <p class="project-para">This is a clone of YouTube which is a free video sharing website. It uses data fetched from YouTube API.</p>
-                <a style="display:inline-block;margin-right: 20px;"
-                    href="https://github.com/atrisomya/YouTube-Clone" target="_blank">Code<i
-                        class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-                <a style="display:inline-block;margin-right: 20px;"
-                    href="https://tube-you.netlify.app/" target="_blank">Live<i
-                        class="fa-solid fa-square-arrow-up-right"
-                        style="display: block-inline;margin-left:5px"></i></a>
-                <div>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">JavaScript
-                    </p>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">HTML</p>
-                    <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">CSS</p>
-                </div>
-            </div>
-
-        </div>
-      <!-- div -->
-       <!-- <div > -->
-        <div class="work__box">
-          <div class="right_box_work">
-                  <img class="work__img" src="images/Movie-App.png" alt="">
-
-          </div>
-          <div class="left_box_work">
-              <div class="work_project_name">
-                  <h2 class="project-heading">Movie App</h2>
-              </div>
-              <p class="project-para">This is a movie app where you can search for any Movie/TV Show and retrieve information about the same.</p>
-              <a style="display:inline-block;margin-right: 20px;"
-                  href="https://github.com/atrisomya/Movie-App" target="_blank">Code<i
-                      class="fa-brands fa-github" style="display: block-inline;margin-left:5px"></i></a>
-              <a style="display:inline-block;margin-right: 20px;"
-                  href="https://hotstarmovie.netlify.app/" target="_blank">Live<i
-                      class="fa-solid fa-square-arrow-up-right"
-                      style="display: block-inline;margin-left:5px"></i></a>
-              <div>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">JavaScript
-                  </p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">HTML</p>
-                  <p class="button_tool project-para" style="font-size: 12px;margin-top: 10px;">CSS</p>
-              </div>
-          </div>
-
-      </div>
-    <!-- div -->
-    </div>
-  </section>
-      <!-- Github Stats section-->
-      <section style="background-color: black; color: white;" class="services" id="stats">
         <div class="max-width">
-            <h2 class="title">GitHub Statistics</h2>
-            <div id="gitstat1">
-              <div>
-                  <img src="https://github-readme-stats.vercel.app/api?username=atrisomya&show_icons=true&theme=tokyonight" alt="">
-              </div>
-              <div>
-                  <img src="https://github-readme-streak-stats.herokuapp.com/?user=atrisomya&theme=tokyonight" alt="">
-              </div>
+            <h2 class="title">Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img class="work__img" src="https://camo.githubusercontent.com/391dc1a5c632a9ae0e539d29aa73fa85f7ddb74ad6aefa30fd22e22096355275/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d7a6c49316a53735f4f4c366b5372527346686779396b6b61794a595646725948706b77347250644670756d4a4e5051536b673465614c36327079777866655467364d3d7732343030" alt="">
+                        <div class="text">Online Banking Application</div>
+                        <p>An online banking application to maintain the accounts, withdraw, deposit money and track their transactions. Bank provides account number to the customer for all the transactions in the bank. </p>
+                        <p>   --</p>
+                        <p> <strong>Tech Stack:</strong> Java | JDBC | MySQL</p>   
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/atrisomya/Online-Banking-Application" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://drive.google.com/file/d/1tK7cmim5vUhjXvt8m_la7Vwi5Wkra6VC/view?usp=sharing" target="_blank">  Video  </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="images/amusement park app.png" alt="">
+                        <div class="text">Amusement Park Application</div>
+                        <p>REST API for an Online Amusement Park Application where a customer can book tickets, signup, login, view billing details and an admin can perform the CRUD Operations on activities, tickets and Customers.</p>
+                            <p>   --</p>
+                        <p> <strong>Tech Stack:</strong> JAVA | Spring | Hibernate  MySQL | Swagger | Postman</p>   
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/atrisomya/Amusement-Park-application" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://drive.google.com/file/d/15ETuXwxbUS_oltXvYvAJBYR9J6dmkhHT/view" target="_blank">  Git Repo  </a></span>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="images/HubSpot.png" alt="">
+                        <div class="text">HubSpot - Clone</div>
+                        <p>This is a clone of the website HubSpot which is a software platform designed to help your company market and sell more effectively.</p>
+                        <p>   --</p>
+                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>   
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/atrisomya/HubSpot-Clone" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://willowy-biscuit-b9483d.netlify.app/" target="_blank">  Live Site  </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/licious.png" alt="">
+                        <div class="text">Licious - Clone</div>
+                        <p>Licious is a website that provides web-based meat and fish delivery service. It also provides an admin panel along with the usual functionalities for users.</p>
+                        <p>   --</p>
+                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript | Firebase</p>   
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/atrisomya/Licious-Clone" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://liicious.netlify.app/ target="_blank">  Live Site  </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/YouTube.png" alt="">
+                        <div class="text">YouTube - Clone</div>
+                        <p>This is a clone of YouTube which is a free video sharing website. It uses data fetched from YouTube API.</p>
+                            <p>   --</p>
+                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>   
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/atrisomya/YouTube-Clone" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://tube-you.netlify.app/" target="_blank">  Live Site  </a></span>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/Movie-App.png" alt="">
+                        <div class="text">Movie App</div>
+                        <p>This is a movie app where you can search for any Movie/TV Show and retrieve information about the same.</p>
+                            <p>   --</p>
+                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>   
+                        <div class="repo-links">
+                            <div class="repo-div">
+                                <span>  <a href="https://github.com/atrisomya/Movie-App" target="_blank"> Git Repo </a></span>
+                            </div>
+                            <div class="demo-div">
+                                <span> <a href="https://hotstarmovie.netlify.app/" target="_blank">  Live Site  </a></span>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
             </div>
-            <div class="calendar">
-              <img style="display: block; margin: auto; margin-top: 40px; width: 100%;" src="https://ghchart.rshah.org/atrisomya" alt="atrisomya's Github chart" />
-            </div>
-      </div>      
+        </div>
     </section>
+
    <!-- contact section-->
    <section class="contact" id="contact">
       <div class="max-width">
@@ -482,12 +392,6 @@
                               <div class="sub-title"> <a href="https://github.com/atrisomya" target="_blank" >GitHub</a> </div>
                           </div>
                       </div>
-                      <!-- <div class="row">
-                        <a href="tel:8700375680"> <i class="fa-solid fa-phone"></i> </a>
-                       <div class="info">
-                           <div class="sub-title"> <a href="tel:8700375680">+91 8700375680</a> </div>
-                       </div>
-                   </div> -->
 
                       
 
@@ -521,7 +425,8 @@
 
    <!-- footer section-->
    <footer>
-      <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    <span>Made with ❤️</span>
+      <span class="far fa-copyright"></span> <span>2022 All rights reserved.</span>
   </footer>
 
   <script src="script.js"></script>
