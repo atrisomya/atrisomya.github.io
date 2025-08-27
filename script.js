@@ -1,3 +1,7 @@
+(function () {
+  emailjs.init("YOUR_USER_ID");
+})();
+
 $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll
@@ -18,7 +22,6 @@ $(document).ready(function () {
     $("html").css("scrollBehavior", "smooth");
   });
 
-  // owl carousel script
   // owl carousel script
   $(".carousel").owlCarousel({
     margin: 20,
@@ -48,8 +51,6 @@ $(".menu-btn").click(function () {
   $(".menu-btn i").toggleClass("active");
 });
 
-// lightslider script
-
 // typing text animation
 var typed = new Typed(".typing", {
   strings: ["Front-end Developer", "Back-End Developer", "Dreamer"],
@@ -67,13 +68,13 @@ var typed = new Typed(".typing-2", {
 
 document.getElementById("resume").addEventListener("click", (e) => {
   window.open(
-    "https://drive.google.com/file/d/1zNs5p_fSuewthjtj2X001pauDclCCbkI/view?usp=sharing",
+    "https://drive.google.com/file/d/13WUszt64kI_B_-GMVfko5YyZfmScVQ0t/view?usp=sharing",
     "_blank"
   );
 });
 document.getElementById("resume2").addEventListener("click", (e) => {
   window.open(
-    "https://drive.google.com/file/d/1zNs5p_fSuewthjtj2X001pauDclCCbkI/view?usp=sharing",
+    "https://drive.google.com/file/d/13WUszt64kI_B_-GMVfko5YyZfmScVQ0t/view?usp=sharing",
     "_blank"
   );
 });
@@ -90,3 +91,37 @@ for (let i = 0; i < stars; i++) {
   star.style.opacity = Math.random();
   space.appendChild(star);
 }
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (e) {
+    e.preventDefault(); // stop default redirect
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/xovnvvwp", {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        document.getElementById("status").innerText =
+          "✅ Message sent successfully!";
+        form.reset();
+      } else {
+        document.getElementById("status").innerText =
+          "❌ Oops! Something went wrong.";
+      }
+    } catch (err) {
+      document.getElementById("status").innerText =
+        "⚠️ Network error. Try again.";
+    }
+
+    // Auto-hide after 20 seconds
+    setTimeout(() => {
+      statusEl.innerText = "";
+    }, 20000);
+  });

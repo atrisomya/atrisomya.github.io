@@ -312,11 +312,6 @@ section .title::after {
   background: white;
 }
 
-#gitstat1 {
-  display: flex;
-  justify-content: space-between;
-}
-
 /* skills section style */
 .skills-images img {
   height: 160px;
@@ -340,10 +335,18 @@ section .title::after {
   gap: 50px;
 }
 
+.skill-technical {
+  flex: 2;
+}
+
+.skill-tools {
+  flex: 1;
+}
+
 .skill__box {
   position: relative;
   background-color: var(--container-color);
-  padding: 2.5rem 1.5rem 2.25rem 1.5rem;
+  padding: 1.5rem 0.5rem 1.25rem 0.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgb(255, 255, 255);
   transition: 0.3s;
@@ -743,14 +746,6 @@ footer span a:hover {
     margin-bottom: 35px;
   }
 
-  #gitstat1 {
-    display: block;
-  }
-
-  #homegif img {
-    display: none;
-  }
-
   .skill_grid {
     flex-direction: column;
   }
@@ -789,17 +784,6 @@ footer span a:hover {
     width: 100%;
   }
 
-  #gitstat1 {
-    display: block;
-  }
-
-  #gitstat1 img {
-    width: 100%;
-  }
-
-  #homegif img {
-    display: none;
-  }
   .work__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -902,17 +886,5 @@ footer span a:hover {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
-  }
-
-  #gitstat1 {
-    display: block;
-  }
-
-  #gitstat1 img {
-    width: 100%;
-  }
-
-  #homegif img {
-    display: none;
   }
 }

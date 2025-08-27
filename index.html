@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
    <script src="https://kit.fontawesome.com/241a1cab24.js" crossorigin="anonymous"></script> 
-
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
   <div class="space-bg" id="space"></div>
@@ -24,10 +24,11 @@
           <ul class="menu">
               <li><a href="#home" class="menu-btn">Home</a></li>
               <li><a href="#about" class="menu-btn">About</a></li>
+              <li><a href="#experience" class="menu-btn">Experience</a></li>
               <li><a href="#skills" class="menu-btn">Skills</a></li>
               <li><a href="#project" class="menu-btn">Projects</a></li>
               <li><a href="#contact" class="menu-btn">Contact</a></li>
-              <li><a id="resume" href="./pdf/Somya-Upadhyay-Resume.pdf" target="_blank" download="Somya-Upadhyay-Resume.pdf" class="menu-btn">Resumé</a></li>
+              <li><a id="resume" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf" class="menu-btn">Resumé</a></li>
           </ul>
           <div class="menu-btn">
               <i class="fas fa-bars"></i>
@@ -36,12 +37,12 @@
   </nav>
   <!-- home section -->
   <section class="home" id="home">
-   <div class="max-width" id="homegif">
+   <div class="max-width">
        <div class="home-content">
            <div class="text-1">Hello, there! I'm</div>
            <div class="text-2">Somya Upadhyay</div>
            <div class="text-3"><span class="typing"></span></div>
-           <a id="resume2" href="./pdf/Somya-Upadhyay-Resume.pdf" target="_blank" download="Somya-Upadhyay-Resume.pdf">Resumé</a>
+           <a id="resume2" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf">Resumé</a>
        </div>
    </div>
 </section>
@@ -52,17 +53,24 @@
        <h2 class="title">About me</h2>
        <div class="about-content">
            <div class="column left">
-               <img src="images/Somya Upadhyay.jpeg" alt="">
+               <img src="images/Somya Upadhyay.jpeg" alt="Somya Upadhyay">
            </div>
            <div class="column right">
                <div class="text">I'm Somya and I'm a <span class="typing-2"></span></div>
-               <p>A dedicated and detail-oriented, aspiring Back-end
-                  Developer, adept at creating robust and scalable
-                  applications using Java and SpringBoot. Effective 
-                  collaborator with a passion to create good
-                  software who is looking forward to a successful career
-                  as a Java back-end developer.</p>
+               <p>Software Engineer with nearly 2 years of experience building scalable full-stack applications using Angular, Java, Spring Boot, Spring AI, and Chart.js. Skilled in developing responsive, data-driven dashboards, designing RESTful APIs, and optimizing backend performance with microservices, Elasticsearch, RabbitMQ, and gRPC. Experienced in integrating AI-powered features such as intelligent chatbots with Spring AI and Angular, while driving improvements in performance, scalability, and user experience.</p>
            </div>
+       </div>
+   </div>
+</section>
+
+<!-- experience section -->
+  <section class="exprience" id="experience">
+   <div class="max-width">
+       <div class="experience-content">
+           <h2 class="title">Experience</h2>
+           <div class="experience-card">
+               <div class="experience-icon">
+                   <i class="fa-solid fa-briefcase"></i>
        </div>
    </div>
 </section>
@@ -70,7 +78,7 @@
    <section class="skills section" id="skills">
     <h2 class="title">My Skills</h2>
     <div class="skill_grid">
-      <div>
+      <div class="skill-technical">
         <h2 class="section_title">Technical Skills</h2>
         <span class="section_subtitle"></span>
         <div class="skills__container container grid">
@@ -158,6 +166,16 @@
                       <h3 class="services__title">Maven<br /></h3>
                     </div>
                   </div>
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon
+                        icon="simple-icons:chartdotjs"
+                        height="45"
+                        width="45"
+                      ></iconify-icon>
+                      <h3 class="services__title">Chart.js<br /></h3>
+                    </div>
+                  </div>
                   <!-- tools -->
                 </div>
               </div>
@@ -166,7 +184,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="skill-tools">
         <h2 class="section_title">Tools</h2>
         <span class="section_subtitle"></span>
         <div class="skills__container container grid">
@@ -396,25 +414,27 @@
               </div>
               <div class="column right">
                   <div class="text">Message me</div>
-                  <form action="#">
+                    <form id="contactForm">
                       <div class="fields">
-                          <div class="field name">
-                              <input type="text" placeholder="Name" required>
-                          </div>
-                          <div class="field email">
-                              <input type="email" placeholder="Email" required>
-                          </div>
+                        <div class="field name">
+                          <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="field email">
+                          <input type="email" name="email" placeholder="Email" required>
+                        </div>
                       </div>
                       <div class="field">
-                          <input type="text" placeholder="Subject" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
                       </div>
                       <div class="field textarea">
-                          <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
                       </div>
                       <div class="button-area">
-                          <button type="submit">Send message</button>
+                        <button type="submit">Send message</button>
                       </div>
-                  </form>
+                    </form>
+
+                    <p id="status"></p>
               </div>
           </div>
       </div>
