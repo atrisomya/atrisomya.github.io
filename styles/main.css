@@ -1008,14 +1008,18 @@ footer span a:hover {
   .home .home-content .text-2 {
     font-size: 40px;
   }
+
+  .project .carousel .card {
+    height: 700px;
+  }
 }
 
 @media (max-width: 500px) {
   .home .home-content a {
     display: block;
     margin-left: 0%;
-    background: var(--theme-color);
-    color: white;
+    background: rgba(57, 255, 20, 0.05);
+    color: var(--theme-color);
     font-size: 25px;
     padding: 12px 20px;
     margin-top: 20px;
@@ -1094,6 +1098,11 @@ footer span a:hover {
     height: 38px;
     width: 35px;
     font-size: 23px;
-    line-height: 38px;
+  }
+}
+
+@media (hover: none) or (pointer: coarse) {
+  .cursor {
+    display: none !important;
   }
 }
