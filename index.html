@@ -1,85 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Somya Upadhyay | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/Somya Upadhyay.jpeg">
-   <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-   <script src="https://kit.fontawesome.com/241a1cab24.js" crossorigin="anonymous"></script> 
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Somya Upadhyay's Portfolio - Software Engineer specializing in Angular, Java, Spring Boot, and Full Stack Development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Somya Upadhyay | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/Somya Upadhyay.jpeg">
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <script src="https://kit.fontawesome.com/241a1cab24.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+  <audio id="clickSound" src="audio/mouse-click-290204.mp3" preload="auto"></audio>
+  <div class="cursor"></div>
   <div class="space-bg" id="space"></div>
-   <nav class="navbar">
-      <div class="max-width">
-          <div class="logo"><a href="#">Somya <span>U.</span></a></div>
-          <ul class="menu">
-              <li><a href="#home" class="menu-btn">Home</a></li>
-              <li><a href="#about" class="menu-btn">About</a></li>
-              <li><a href="#experience" class="menu-btn">Experience</a></li>
-              <li><a href="#skills" class="menu-btn">Skills</a></li>
-              <li><a href="#project" class="menu-btn">Projects</a></li>
-              <li><a href="#contact" class="menu-btn">Contact</a></li>
-              <li><a id="resume" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf" class="menu-btn">Resumé</a></li>
-          </ul>
-          <div class="menu-btn">
-              <i class="fas fa-bars"></i>
-          </div>
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="#">Somya <span>U.</span></a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn">Home</a></li>
+        <li><a href="#about" class="menu-btn">About</a></li>
+        <li><a href="#experience" class="menu-btn">Experience</a></li>
+        <li><a href="#skills" class="menu-btn">Skills</a></li>
+        <li><a href="#project" class="menu-btn">Projects</a></li>
+        <li><a href="#contact" class="menu-btn">Contact</a></li>
+        <li><a id="resume" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf"
+            class="menu-btn">Resumé</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
       </div>
+    </div>
   </nav>
   <!-- home section -->
   <section class="home" id="home">
-   <div class="max-width">
-       <div class="home-content">
-           <div class="text-1">Hello, there! I'm</div>
-           <div class="text-2">Somya Upadhyay</div>
-           <div class="text-3"><span class="typing"></span></div>
-           <a id="resume2" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf">Resumé</a>
-       </div>
-   </div>
-</section>
+    <div class="max-width">
+      <div class="home-content">
 
-<!-- about section-->
-<section class="about" id="about">
-   <div class="max-width">
-       <h2 class="title">About me</h2>
-       <div class="about-content">
-           <div class="column left">
-               <img src="images/Somya Upadhyay.jpeg" alt="Somya Upadhyay">
-           </div>
-           <div class="column right">
-               <div class="text">I'm Somya and I'm a <span class="typing-2"></span></div>
-               <p>Software Engineer with nearly 2 years of experience building scalable full-stack applications using Angular, Java, Spring Boot, Spring AI, and Chart.js. Skilled in developing responsive, data-driven dashboards, designing RESTful APIs, and optimizing backend performance with microservices, Elasticsearch, RabbitMQ, and gRPC. Experienced in integrating AI-powered features such as intelligent chatbots with Spring AI and Angular, while driving improvements in performance, scalability, and user experience.</p>
-           </div>
-       </div>
-   </div>
-</section>
+        <div class="text-2">Somya Upadhyay</div>
+        <div class="text-3"><span class="typing"></span></div>
 
-<!-- experience section -->
+        <div class="resume-btn">
+          <a id="resume2" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf"
+            class="btn-terminal">Resumé</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about section-->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About me</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="images/Somya Upadhyay.jpeg" alt="Somya Upadhyay">
+        </div>
+        <div class="column right">
+          <div class="text">I'm Somya and I work with <span class="typing-2"></span></div>
+          <p>Software Engineer with nearly 2 years of experience building scalable full-stack applications using
+            Angular, Java, Spring Boot, Spring AI, and Chart.js. Skilled in developing responsive, data-driven
+            dashboards, designing RESTful APIs, and optimizing backend performance with microservices, Elasticsearch,
+            RabbitMQ, and gRPC. Experienced in integrating AI-powered features such as intelligent chatbots with Spring
+            AI and Angular, while driving improvements in performance, scalability, and user experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- experience section -->
   <section class="exprience" id="experience">
-   <div class="max-width">
-       <div class="experience-content">
-           <h2 class="title">Experience</h2>
-           <div class="experience-card">
-               <div class="experience-icon">
-                   <i class="fa-solid fa-briefcase"></i>
-       </div>
-   </div>
-</section>
-   
-   <section class="skills section" id="skills">
+    <div class="max-width">
+      <div class="experience-content">
+        <h2 class="title">Experience</h2>
+
+        <div class="experience-outer-container">
+          <div class="experience-items">
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>Developed front-end applications using <span>Angular</span>, <span>Material UI</span>, and
+              <span>Chart.js</span>, delivering dynamic, <span>responsive</span> dashboards such as 360 View, Hierarchy
+              View, SLA Analytics, AI Token Analytics, and DQM View.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>
+              Owned end-to-end feature development—for example, built <span>Elasticsearch-powered query</span> APIs and
+              a
+              corresponding Angular dashboard UI for the DQM View module, now used by internal users for data quality
+              monitoring.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>
+              Built and integrated an <span>AI-powered chatbot</span> using <span>Spring AI</span>, with a
+              conversational
+              Angular UI and Spring Boot backend, enabling intelligent interactions.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>
+              Enhanced application performance and responsiveness by implementing <span>NgRx + RxJS</span> for reactive
+              state management and lazy loading strategies, achieving a <span>1.5× load time improvement</span>.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>
+              Designed and consumed RESTful APIs using <span>Java</span>, <span>Spring Boot</span>, and
+              <span>PostgreSQL</span>, enabling seamless client-server
+              communication. Contributed to a microservices architecture, leveraging <span>RabbitMQ</span> for async
+              communication and
+              a
+              combined stack of PostgreSQL and <span>Elasticsearch</span> for high-performance data management and
+              search
+              functionality.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>
+              Improved backend validation efficiency and speed by optimizing validation logic, writing robust
+              <span>JUnit</span> tests, and
+              integrating <span>gRPC</span> for selected API calls—resulting in up to <span>60% performance gain</span>.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>
+              Developed several responsive features for the <span>mobile (phone) view</span> of the product, ensuring
+              consistent and
+              intuitive UX
+              across devices.
+
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-icon">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <p>
+              Actively participated in <span>code reviews</span> and <span>architectural discussions</span>, driving
+              system-wide performance and scalability
+              enhancements.
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="skills section" id="skills">
     <h2 class="title">My Skills</h2>
     <div class="skill_grid">
       <div class="skill-technical">
-        <h2 class="section_title">Technical Skills</h2>
+        <h2 class="section_title">TECHNICAL SKILLS</h2>
         <span class="section_subtitle"></span>
         <div class="skills__container container grid">
           <div>
@@ -88,95 +200,126 @@
                 <div class="tech__row">
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="logos:java"
-                        height="40"
-                      ></iconify-icon>
+                      <iconify-icon icon="logos:java" height="40"></iconify-icon>
                       <h3 class="services__title">Java<br /></h3>
                     </div>
                   </div>
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="logos:spring-icon"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon icon="logos:spring-icon" height="40" width="35"></iconify-icon>
                       <h3 class="services__title">Spring<br /></h3>
                     </div>
                   </div>
 
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        style="color: #65b743"
-                        icon="simple-icons:springboot"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon style="color: #65b743" icon="simple-icons:springboot" height="40"
+                        width="35"></iconify-icon>
                       <h3 class="services__title">Spring Boot<br /></h3>
                     </div>
                   </div>
 
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="vscode-icons:file-type-html"
-                        height="40"
-                      ></iconify-icon>
+                      <iconify-icon icon="vscode-icons:file-type-html" height="40"></iconify-icon>
                       <h3 class="services__title">HTML<br /></h3>
                     </div>
                   </div>
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="vscode-icons:file-type-css"
-                        height="40"
-                      ></iconify-icon>
+                      <iconify-icon icon="vscode-icons:file-type-css" height="40"></iconify-icon>
                       <h3 class="services__title">CSS<br /></h3>
                     </div>
                   </div>
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="logos:javascript"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon icon="logos:javascript" height="40" width="35"></iconify-icon>
                       <h3 class="services__title">JavaScript<br /></h3>
                     </div>
                   </div>
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="logos:hibernate"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon icon="logos:hibernate" height="40" width="35"></iconify-icon>
                       <h3 class="services__title">Hibernate<br /></h3>
                     </div>
                   </div>
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="vscode-icons:file-type-maven"
-                        height="45"
-                        width="45"
-                      ></iconify-icon>
-                      <h3 class="services__title">Maven<br /></h3>
-                    </div>
-                  </div>
-                  <div class="skill__box">
-                    <div>
-                      <iconify-icon
-                        icon="simple-icons:chartdotjs"
-                        height="45"
-                        width="45"
-                      ></iconify-icon>
+                      <iconify-icon icon="simple-icons:chartdotjs" height="45" width="45"></iconify-icon>
                       <h3 class="services__title">Chart.js<br /></h3>
                     </div>
                   </div>
-                  <!-- tools -->
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="devicon:mysql" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">MySQL<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="devicon:elasticsearch" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">Elasticsearch<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="logos:grpc" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">gRPC<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="skill-icons:rabbitmq-dark" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">RabbitMQ<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="logos:typescript-icon" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">TypeScript<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="logos:tailwindcss-icon" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">Tailwind<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="devicon:postgresql" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">PostgreSQL<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <img src="images/SpringAI-removebg-preview.png" />
+                      <h3 class="services__title">Spring AI<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="skill-icons:expressjs-dark" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">ExpressJS<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="devicon:angular" height="45" width="45"></iconify-icon>
+                      <h3 class="services__title">Angular<br /></h3>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -185,7 +328,7 @@
       </div>
 
       <div class="skill-tools">
-        <h2 class="section_title">Tools</h2>
+        <h2 class="section_title">TOOLS</h2>
         <span class="section_subtitle"></span>
         <div class="skills__container container grid">
           <div>
@@ -194,11 +337,7 @@
                 <div class="tech__row">
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="logos:mysql-icon"
-                        height="40"
-                        width="40"
-                      ></iconify-icon>
+                      <iconify-icon icon="logos:mysql-icon" height="40" width="40"></iconify-icon>
                       <h3 class="services__title">MySQL<br /></h3>
                     </div>
                   </div>
@@ -206,58 +345,52 @@
                   <!-- tools -->
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        style="color: #e84d31"
-                        icon="fa6-brands:git-alt"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon style="color: #e84d31" icon="fa6-brands:git-alt" height="40"
+                        width="35"></iconify-icon>
                       <h3 class="services__title">Git<br /></h3>
                     </div>
                   </div>
 
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="logos:swagger"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon icon="logos:swagger" height="40" width="35"></iconify-icon>
                       <h3 class="services__title">Swagger<br /></h3>
                     </div>
                   </div>
 
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        style="color: #e84d31"
-                        icon="skill-icons:postman"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon style="color: #e84d31" icon="skill-icons:postman" height="40"
+                        width="35"></iconify-icon>
                       <h3 class="services__title">Postman<br /></h3>
                     </div>
                   </div>
 
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        style="color: #1f1e1e"
-                        icon="skill-icons:github-light"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon style="color: #1f1e1e" icon="skill-icons:github-light" height="40"
+                        width="35"></iconify-icon>
                       <h3 class="services__title">GitHub<br /></h3>
                     </div>
                   </div>
                   <div class="skill__box">
                     <div>
-                      <iconify-icon
-                        icon="vscode-icons:file-type-vscode"
-                        height="40"
-                        width="35"
-                      ></iconify-icon>
+                      <iconify-icon icon="vscode-icons:file-type-vscode" height="40" width="35"></iconify-icon>
                       <h3 class="services__title">VsCode<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="skill-icons:docker" height="55" width="45"></iconify-icon>
+                      <h3 class="services__title">Docker<br /></h3>
+                    </div>
+                  </div>
+
+                  <div class="skill__box">
+                    <div>
+                      <iconify-icon icon="devicon:firebase" height="55" width="45"></iconify-icon>
+                      <h3 class="services__title">Firebase<br /></h3>
                     </div>
                   </div>
                 </div>
@@ -269,183 +402,196 @@
     </div>
   </section>
 
-<!--==================== Projects ====================-->
+  <!--==================== Projects ====================-->
 
   <section class="project" id="project">
-        <div class="max-width">
-            <h2 class="title">Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img class="work__img" src="https://camo.githubusercontent.com/391dc1a5c632a9ae0e539d29aa73fa85f7ddb74ad6aefa30fd22e22096355275/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d7a6c49316a53735f4f4c366b5372527346686779396b6b61794a595646725948706b77347250644670756d4a4e5051536b673465614c36327079777866655467364d3d7732343030" alt="">
-                        <div class="text">Online Banking Application</div>
-                        <p class="project-desc">An online banking application to maintain the accounts, withdraw, deposit money and track their transactions. Bank provides account number to the customer for all the transactions in the bank. </p>
-                        <p> <strong>Tech Stack:</strong> Java | JDBC | MySQL</p>   
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/atrisomya/Online-Banking-Application" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://drive.google.com/file/d/1tK7cmim5vUhjXvt8m_la7Vwi5Wkra6VC/view?usp=sharing" target="_blank">  Video  </a></span>
-                            </div>
-                        </div>
-                    </div>
+    <div class="max-width">
+      <h2 class="title">Projects</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <img class="work__img"
+              src="https://camo.githubusercontent.com/cfdae47e064ebdc741745835f745e76209206bca131be790d7fb29805d7e3882/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f2d7a6c49316a53735f4f4c366b5372527346686779396b6b61794a595646725948706b77347250644670756d4a4e5051536b673465614c36327079777866655467364d3d7732343030"
+              alt="">
+            <div class="text">Online Banking Application</div>
+            <p class="project-desc">An online banking application to maintain the accounts, withdraw, deposit money and
+              track their transactions. Bank provides account number to the customer for all the transactions in the
+              bank. </p>
+            <p> <strong>Tech Stack:</strong> Java | JDBC | MySQL</p>
+              <div class="repo-links">
+                <div class="repo-div">
+                  <a href="https://github.com/atrisomya/Online-Banking-Application" target="_blank" class="btn-terminal">Git Repo</a>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="images/amusement park app.png" alt="">
-                        <div class="card-text">
-                          <div class="text">Amusement Park Application</div>
-                          <p class="project-desc">REST API for an Amusement Park with customer features (signup, login, ticket booking, billing) and an admin panel for managing activities, tickets, and customers (CRUD).</p>
-                          <p> <strong>Tech Stack:</strong> JAVA | Spring | Hibernate  MySQL | Swagger</p>
-                        </div>   
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/atrisomya/Amusement-Park-application" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://drive.google.com/file/d/15ETuXwxbUS_oltXvYvAJBYR9J6dmkhHT/view" target="_blank">  Git Repo  </a></span>
-                            </div>
-                        </div>    
-                    </div>
-                    
+                <div class="demo-div">
+                  <a href="https://drive.google.com/file/d/1tK7cmim5vUhjXvt8m_la7Vwi5Wkra6VC/view?usp=sharing" target="_blank" class="btn-terminal">Video</a>
                 </div>
-
-                <div class="card">
-                    <div class="box">
-                        <img src="images/HubSpot.png" alt="">
-                        <div class="text">HubSpot - Clone</div>
-                        <p class="project-desc">This is a clone of the website HubSpot which is a software platform designed to help your company market and sell more effectively.</p>
-                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>   
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/atrisomya/HubSpot-Clone" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://willowy-biscuit-b9483d.netlify.app/" target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/licious.png" alt="">
-                        <div class="text">Licious - Clone</div>
-                        <p class="project-desc">Licious is a website that provides web-based meat and fish delivery service. It also provides an admin panel along with the usual functionalities for users.</p>
-                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript | Firebase</p>   
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/atrisomya/Licious-Clone" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://liicious.netlify.app/ target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/YouTube.png" alt="">
-                        <div class="text">YouTube - Clone</div>
-                        <p class="project-desc">This is a clone of YouTube which is a free video sharing website. It uses data fetched from YouTube API.</p>
-                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>   
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/atrisomya/YouTube-Clone" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://tube-you.netlify.app/" target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/Movie-App.png" alt="">
-                        <div class="text">Movie App</div>
-                        <p class="project-desc">This is a movie app where you can search for any Movie/TV Show and retrieve information about the same.</p>
-                        <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>   
-                        <div class="repo-links">
-                            <div class="repo-div">
-                                <span>  <a href="https://github.com/atrisomya/Movie-App" target="_blank"> Git Repo </a></span>
-                            </div>
-                            <div class="demo-div">
-                                <span> <a href="https://hotstarmovie.netlify.app/" target="_blank">  Live Site  </a></span>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   <!-- contact section-->
-   <section class="contact" id="contact">
-      <div class="max-width">
-          <h2 class="title">Contact me</h2>
-          <div class="contact-content">
-              <div class="column left">
-                  <div class="text">Get in Touch</div>
-                  <div class="icons">
-                      <div class="row">
-                          <a href=" mailto:atrisomya@gmail.com">   <i class="fas fa-envelope"></i> </a>
-                          <div class="info">
-                              <div class="head"></div>
-                              <div class="sub-title">  <a href="mailto:atrisomya@gmail.com"> atrisomya@gmail.com </a> </div>
-                          </div>
-                      </div>
-                      <div class="row">
-                           <a href="https://www.linkedin.com/in/100mya-upadhyay/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
-                          <div class="info">
-                              <div class="sub-title">  <a href="https://www.linkedin.com/in/100mya-upadhyay/" target="_blank">Linkedin</a> </div>
-                          </div>
-                      </div>
-                      <div class="row">
-                           <a href="https://github.com/atrisomya" target="_blank"> <i class="fab fa-github"></i> </a>
-                          <div class="info">
-                              <div class="sub-title"> <a href="https://github.com/atrisomya" target="_blank" >GitHub</a> </div>
-                          </div>
-                      </div>
-
-                      
-
-                  </div>
-              </div>
-              <div class="column right">
-                  <div class="text">Message me</div>
-                    <form id="contactForm">
-                      <div class="fields">
-                        <div class="field name">
-                          <input type="text" name="name" placeholder="Name" required>
-                        </div>
-                        <div class="field email">
-                          <input type="email" name="email" placeholder="Email" required>
-                        </div>
-                      </div>
-                      <div class="field">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                      </div>
-                      <div class="field textarea">
-                        <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
-                      </div>
-                      <div class="button-area">
-                        <button type="submit">Send message</button>
-                      </div>
-                    </form>
-
-                    <p id="status"></p>
               </div>
           </div>
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img src="images/amusement park app.png" alt="">
+            <div class="card-text">
+              <div class="text">Amusement Park Application</div>
+              <p class="project-desc">REST API for an Amusement Park with customer features (signup, login, ticket
+                booking, billing) and an admin panel for managing activities, tickets, and customers (CRUD).</p>
+              <p> <strong>Tech Stack:</strong> JAVA | Spring | Hibernate MySQL | Swagger</p>
+            </div>
+            <div class="repo-links">
+              <div class="repo-div">
+                <a href="https://github.com/atrisomya/Amusement-Park-application" target="_blank" class="btn-terminal">Git Repo</a>
+              </div>
+              <div class="demo-div">
+                <a href="https://drive.google.com/file/d/15ETuXwxbUS_oltXvYvAJBYR9J6dmkhHT/view" target="_blank" class="btn-terminal">Video</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="box">
+            <img src="images/HubSpot.png" alt="">
+            <div class="text">HubSpot - Clone</div>
+            <p class="project-desc">This is a clone of the website HubSpot which is a software platform designed to help
+              your company market and sell more effectively.</p>
+            <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>
+            <div class="repo-links">
+              <div class="repo-div">
+                <a href="https://github.com/atrisomya/HubSpot-Clone" target="_blank" class="btn-terminal">Git Repo</a>
+              </div>
+              <div class="demo-div">
+                <a href="https://willowy-biscuit-b9483d.netlify.app/" target="_blank" class="btn-terminal">Live URL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/licious.png" alt="">
+            <div class="text">Licious - Clone</div>
+            <p class="project-desc">Licious is a website that provides web-based meat and fish delivery service. It also
+              provides an admin panel along with the usual functionalities for users.</p>
+            <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript | Firebase</p>
+            <div class="repo-links">
+              <div class="repo-div">
+                 <a href="https://github.com/atrisomya/Licious-Clone" target="_blank" class="btn-terminal"> Git Repo </a>
+              </div>
+              <div class="demo-div">
+                 <a href="https://liicious.netlify.app/" target="_blank" class="btn-terminal"> Live URL </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/YouTube.png" alt="">
+            <div class="text">YouTube - Clone</div>
+            <p class="project-desc">This is a clone of YouTube which is a free video sharing website. It uses data
+              fetched from YouTube API.</p>
+            <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>
+            <div class="repo-links">
+              <div class="repo-div">
+                 <a href="https://github.com/atrisomya/YouTube-Clone" target="_blank" class="btn-terminal"> Git Repo </a>
+              </div>
+              <div class="demo-div">
+                 <a href="https://tube-you.netlify.app/" target="_blank" class="btn-terminal"> Live URL </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <img src="images/Movie-App.png" alt="">
+            <div class="text">Movie App</div>
+            <p class="project-desc">This is a movie app where you can search for any Movie/TV Show and retrieve
+              information about the same.</p>
+            <p> <strong>Tech Stack:</strong> HTML | CSS | JavaScript</p>
+            <div class="repo-links">
+              <div class="repo-div">
+                 <a href="https://github.com/atrisomya/Movie-App" target="_blank" class="btn-terminal"> Git Repo </a>
+              </div>
+              <div class="demo-div">
+                 <a href="https://hotstarmovie.netlify.app/" target="_blank" class="btn-terminal"> Live URL </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
   </section>
 
-   <!-- footer section-->
-   <footer>
-    <span>Made with ❤️</span>
-      <span class="far fa-copyright"></span> <span>2022 All rights reserved.</span>
+  <!-- contact section-->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <div class="text">Get in Touch</div>
+          <div class="icons">
+            <div class="row">
+              <a href=" mailto:atrisomya@gmail.com"> <i class="fas fa-envelope"></i> </a>
+              <div class="info">
+                <div class="head"></div>
+                <div class="sub-title"> <a href="mailto:atrisomya@gmail.com"> atrisomya@gmail.com </a> </div>
+              </div>
+            </div>
+            <div class="row">
+              <a href="https://www.linkedin.com/in/100mya-upadhyay/" target="_blank"> <i class="fab fa-linkedin"></i>
+              </a>
+              <div class="info">
+                <div class="sub-title"> <a href="https://www.linkedin.com/in/100mya-upadhyay/"
+                    target="_blank">Linkedin</a> </div>
+              </div>
+            </div>
+            <div class="row">
+              <a href="https://github.com/atrisomya" target="_blank"> <i class="fab fa-github"></i> </a>
+              <div class="info">
+                <div class="sub-title"> <a href="https://github.com/atrisomya" target="_blank">GitHub</a> </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="column right">
+          <div class="text">Message me</div>
+          <form id="contactForm">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" name="name" placeholder="Name" required>
+              </div>
+              <div class="field email">
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="field textarea">
+              <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit" class="btn-terminal">Send message</button>
+            </div>
+          </form>
+
+          <p id="status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section-->
+  <footer>
+    
+    
+    <span>Copyright © Designed and created by Somya Upadhyay</span>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>

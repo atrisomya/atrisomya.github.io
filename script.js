@@ -1,6 +1,4 @@
-(function () {
-  emailjs.init("YOUR_USER_ID");
-})();
+
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -53,14 +51,23 @@ $(".menu-btn").click(function () {
 
 // typing text animation
 var typed = new Typed(".typing", {
-  strings: ["Front-end Developer", "Back-End Developer", "Dreamer"],
+  strings: ["Front-end Developer", "Back-End Developer", "AI enthusiast"],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
 });
 
 var typed = new Typed(".typing-2", {
-  strings: ["Back-End Developer"],
+  strings: [
+    "Angular",
+    "Spring Boot",
+    "PostgreSQL",
+    "Elasticsearch",
+    "RabbitMQ",
+    "gRPC",
+    "Chart.js",
+    "Spring AI",
+  ],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
@@ -122,6 +129,19 @@ document
 
     // Auto-hide after 20 seconds
     setTimeout(() => {
-      statusEl.innerText = "";
+      document.getElementById("status").innerText = "";
     }, 20000);
   });
+
+const cursor = document.querySelector(".cursor");
+const clickSound = document.getElementById("clickSound");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
+});
+
+document.addEventListener("click", () => {
+  clickSound.currentTime = 0; // rewind if clicked rapidly
+  clickSound.play();
+});
