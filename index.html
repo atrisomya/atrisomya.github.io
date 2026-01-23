@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/retro-additions.css">
   <title>Somya Upadhyay | Portfolio</title>
   <link rel="icon" type="image/x-icon" href="images/Somya Upadhyay.jpeg">
   <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
@@ -24,6 +25,8 @@
 </head>
 
 <body>
+  <div class="crt-overlay"></div>
+  <div id="boot-sequence" style="display:none;"></div> <!-- Hidden by default until we add JS -->
   <audio id="clickSound" src="audio/mouse-click-290204.mp3" preload="auto"></audio>
   <div class="cursor"></div>
   <div class="space-bg" id="space"></div>
@@ -38,7 +41,7 @@
         <li><a href="#project" class="menu-btn">Projects</a></li>
         <li><a href="#contact" class="menu-btn">Contact</a></li>
         <li><a id="resume" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf"
-            class="menu-btn">Resumé</a></li>
+            class="menu-btn">Download_Log</a></li>
       </ul>
       <div class="menu-btn">
         <i class="fas fa-bars"></i>
@@ -50,12 +53,12 @@
     <div class="max-width">
       <div class="home-content">
 
-        <div class="text-2">Somya Upadhyay</div>
-        <div class="text-3"><span class="typing"></span></div>
+        <div class="text-2 glitch-wrapper"><span class="glitch" data-text="Somya Upadhyay">Somya Upadhyay</span></div>
+        <div class="text-3">System Status: <span class="typing"></span></div>
 
         <div class="resume-btn">
           <a id="resume2" href="./pdf/SomyaUpadhyay2YOE.pdf" target="_blank" download="SomyaUpadhyay2YOE.pdf"
-            class="btn-terminal">Resumé</a>
+            class="btn-terminal">Download_Log</span></a>
         </div>
       </div>
     </div>
@@ -64,18 +67,19 @@
   <!-- about section-->
   <section class="about" id="about">
     <div class="max-width">
-      <h2 class="title">About me</h2>
+      <h2 class="title terminal-header">cat about_me.txt</h2>
       <div class="about-content">
         <div class="column left">
           <img src="images/Somya Upadhyay.jpeg" alt="Somya Upadhyay">
         </div>
         <div class="column right">
-          <div class="text">I'm Somya and I work with <span class="typing-2"></span></div>
+          <div class="text">User: Somya | Type: <span class="typing-2"></span></div>
           <p>Software Engineer with nearly 2 years of experience building scalable full-stack applications using
             Angular, Java, Spring Boot, Spring AI, and Chart.js. Skilled in developing responsive, data-driven
             dashboards, designing RESTful APIs, and optimizing backend performance with microservices, Elasticsearch,
             RabbitMQ, and gRPC. Experienced in integrating AI-powered features such as intelligent chatbots with Spring
             AI and Angular, while driving improvements in performance, scalability, and user experience.</p>
+          <p>> LOG ENTRY END.</p>
         </div>
       </div>
     </div>
@@ -85,7 +89,7 @@
   <section class="exprience" id="experience">
     <div class="max-width">
       <div class="experience-content">
-        <h2 class="title">Experience</h2>
+        <h2 class="title terminal-header">run experience_log.exe</h2>
 
         <div class="experience-outer-container">
           <div class="experience-items">
@@ -188,7 +192,7 @@
   </section>
 
   <section class="skills section" id="skills">
-    <h2 class="title">My Skills</h2>
+    <h2 class="title terminal-header">system_check --modules</h2>
     <div class="skill_grid">
       <div class="skill-technical">
         <h2 class="section_title">TECHNICAL SKILLS</h2>
@@ -406,7 +410,7 @@
 
   <section class="project" id="project">
     <div class="max-width">
-      <h2 class="title">Projects</h2>
+      <h2 class="title terminal-header">ls ./projects</h2>
       <div class="carousel owl-carousel">
         <div class="card">
           <div class="box">
@@ -525,10 +529,10 @@
   <!-- contact section-->
   <section class="contact" id="contact">
     <div class="max-width">
-      <h2 class="title">Contact me</h2>
+      <h2 class="title terminal-header">ssh connection_request</h2>
       <div class="contact-content">
         <div class="column left">
-          <div class="text">Get in Touch</div>
+          <div class="text">Establish Connection</div>
           <div class="icons">
             <div class="row">
               <a href=" mailto:atrisomya@gmail.com"> <i class="fas fa-envelope"></i> </a>
@@ -557,7 +561,7 @@
           </div>
         </div>
         <div class="column right">
-          <div class="text">Message me</div>
+          <div class="text">Transmit Data Packet</div>
           <form id="contactForm">
             <div class="fields">
               <div class="field name">
@@ -574,7 +578,7 @@
               <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
             </div>
             <div class="button-area">
-              <button type="submit" class="btn-terminal">Send message</button>
+              <button type="submit" class="btn-terminal">Execute</button>
             </div>
           </form>
 

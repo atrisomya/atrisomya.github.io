@@ -51,26 +51,67 @@ $(".menu-btn").click(function () {
 
 // typing text animation
 var typed = new Typed(".typing", {
-  strings: ["Front-end Developer", "Back-End Developer", "AI enthusiast"],
-  typeSpeed: 100,
-  backSpeed: 60,
+  strings: ["Initializing Modules...", "Loading AI Cores...", "System Optimizing...", "Front-end Developer", "Back-End Developer", "AI Enthusiast"],
+  typeSpeed: 60,
+  backSpeed: 30,
   loop: true,
 });
 
 var typed = new Typed(".typing-2", {
   strings: [
-    "Angular",
-    "Spring Boot",
-    "PostgreSQL",
-    "Elasticsearch",
-    "RabbitMQ",
-    "gRPC",
-    "Chart.js",
-    "Spring AI",
+    "Angular::Core",
+    "Spring::Boot",
+    "DB::PostgreSQL",
+    "DB::Elasticsearch",
+    "Msg::RabbitMQ",
+    "Proto::gRPC",
+    "UI::Chart.js",
+    "AI::Spring_AI",
   ],
-  typeSpeed: 100,
-  backSpeed: 60,
+  typeSpeed: 80,
+  backSpeed: 40,
   loop: true,
+});
+
+// Boot Sequence
+window.addEventListener('load', () => {
+    const bootScreen = document.getElementById('boot-sequence');
+    if (!bootScreen) return;
+
+    bootScreen.style.display = 'flex';
+    
+    const lines = [
+        "BIOS DATE 01/20/2026 14:22:56 VER 1.0.2",
+        "CPU: 16-CORE ARTIFICIAL NEURAL NETWORK, 4.2 GHZ",
+        "64GB RAM SYSTEM DETECTED",
+        "LOADING KERNEL...",
+        ".....................",
+        "MOUNTING FILE SYSTEMS...",
+        "[OK] FILESYSTEM MOUNTED",
+        "LOADING USER PROFILE: SOMYA",
+        "INITIALIZING GRAPHICS ADAPTER...",
+        "READY."
+    ];
+
+    let delay = 0;
+    lines.forEach((line, index) => {
+        setTimeout(() => {
+            const p = document.createElement('div');
+            p.textContent = "> " + line;
+            bootScreen.appendChild(p);
+            // Scroll to bottom
+            bootScreen.scrollTop = bootScreen.scrollHeight;
+        }, delay);
+        delay += Math.random() * 300 + 100;
+    });
+
+    setTimeout(() => {
+        bootScreen.style.transition = "opacity 0.5s ease";
+        bootScreen.style.opacity = "0";
+        setTimeout(() => {
+            bootScreen.style.display = "none";
+        }, 500);
+    }, delay + 500);
 });
 
 document.getElementById("resume").addEventListener("click", (e) => {
@@ -116,15 +157,15 @@ document
 
       if (res.ok) {
         document.getElementById("status").innerText =
-          "✅ Message sent successfully!";
+          "> TRANSMISSION SUCCESSFUL [200 OK]";
         form.reset();
       } else {
         document.getElementById("status").innerText =
-          "❌ Oops! Something went wrong.";
+          "> ERROR: TRANSMISSION FAILED";
       }
     } catch (err) {
       document.getElementById("status").innerText =
-        "⚠️ Network error. Try again.";
+        "> ERROR: NETWORK UNREACHABLE";
     }
 
     // Auto-hide after 20 seconds
